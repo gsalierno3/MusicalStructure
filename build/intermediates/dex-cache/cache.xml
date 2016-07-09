@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/genarosalierno/Downloads/MusicalStructure/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="881814d982cf4539f85f6dee9fb2f795123008b8">
+        <dex dex="/Users/genarosalierno/Downloads/MusicalStructure/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a3545f9e2561e3eba48fd9be420779e193269dbe/classes.dex" />
+    </item>
+
+</items>
