@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.musicalstructure.Library">
+
+    <LinearLayout
+        android:id="@+id/menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/listen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:background="#E8EAF6"
+            android:padding="8dp"
+            android:text="Listen"/>
+
+        <Button
+            android:id="@+id/library"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/listen"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:background="#E3F2FD"
+            android:padding="8dp"
+            android:text="Library"/>
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/library"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:background="#E0F7FA"
+            android:padding="8dp"
+            android:text="Share"/>
+
+        <Button
+            android:id="@+id/store"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/share"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:background="#E0F2F1"
+            android:padding="8dp"
+            android:text="Store"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E3F2FD"
+        android:layout_below="@id/menu_bar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:text="Provides more information about each song in the library"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

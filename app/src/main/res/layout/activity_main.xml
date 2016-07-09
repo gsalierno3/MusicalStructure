@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.musicalstructure.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/listen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:background="#E8EAF6"
+            android:padding="8dp"
+            android:text="Listen"/>
+
+        <Button
+            android:id="@+id/library"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/listen"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:background="#E3F2FD"
+            android:padding="8dp"
+            android:text="Library"/>
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/library"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:background="#E0F7FA"
+            android:padding="8dp"
+            android:text="Share"/>
+
+        <Button
+            android:id="@+id/store"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/share"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:background="#E0F2F1"
+            android:padding="8dp"
+            android:text="Store"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E8EAF6"
+        android:layout_below="@id/menu_bar"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:text="Select muusic from your Library or Playlist"/>
+
+        <TextView
+            android:id="@+id/toPhoneLibrary"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:background="#3F51B5"
+            android:text="Listen from Phone Library"/>
+
+        <TextView
+            android:id="@+id/fromPlaylist"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:background="#FF5722"
+            android:text="Listen from Playlist"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFC107"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:background="#FF6F00"
+                android:textAllCaps="true"
+                android:text="Just for You"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/listen_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/suggested_song1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:textSize="16sp"
+                        android:textColor="#000"
+                        android:background="#FFA000"
+                        android:text="Suggested Song 1"/>
+                    <TextView
+                        android:id="@+id/suggested_song2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:textSize="16sp"
+                        android:textColor="#000"
+                        android:text="Suggested Song 2"/>
+                    <TextView
+                        android:id="@+id/suggested_song3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:textSize="16sp"
+                        android:textColor="#000"
+                        android:background="#FFA000"
+                        android:text="Suggested Song 3"/>
+                    <TextView
+                        android:id="@+id/suggested_song4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:textSize="16sp"
+                        android:textColor="#000"
+                        android:text="Suggested Song 4"/>
+                    <TextView
+                        android:id="@+id/suggested_song5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:textSize="16sp"
+                        android:textColor="#000"
+                        android:background="#FFA000"
+                        android:text="Suggested Song 5"/>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
